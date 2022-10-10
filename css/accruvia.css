@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.ttf") format("truetype"),
+    url("../fonts/Inter-Bold.ttf") format("truetype"),
+    url("../fonts/Inter-ExtraBold.ttf") format("truetype"),
+    url("../fonts/Inter-ExtraLight.ttf") format("truetype"),
+    url("../fonts/Inter-Light.ttf") format("truetype"),
+    url("../fonts/Inter-Medium.ttf") format("truetype"),
+    url("../fonts/Inter-Regular.ttf") format("truetype"),
+    url("../fonts/Inter-SemiBold.ttf") format("truetype"),
+    url("../fonts/Inter-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nabla";
+  src: url("../fonts/Nabla-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ramabhadra";
+  src: url("../fonts/Ramabhadra-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Glory";
+  src: url("../fonts/Glory-Bold.ttf") format("truetype"),
+    url("../fonts/Glory-BoldItalic.ttf") format("truetype"),
+    url("../fonts/Glory-ExtraBold.ttf") format("truetype"),
+    url("../fonts/Glory-ExtraBoldItalic.ttf") format("truetype"),
+    url("../fonts/Glory-ExtraLight.ttf") format("truetype"),
+    url("../fonts/Glory-ExtraLightItalic.ttf") format("truetype"),
+    url("../fonts/Glory-Italic.ttf") format("truetype"),
+    url("../fonts/Glory-Light.ttf") format("truetype"),
+    url("../fonts/Glory-LightItalic.ttf") format("truetype"),
+    url("../fonts/Glory-Medium.ttf") format("truetype"),
+    url("../fonts/Glory-MediumItalic.ttf") format("truetype"),
+    url("../fonts/Glory-Regular.ttf") format("truetype");
+}
+
+body {
+  min-width: 20rem;
+}
+.accruvia-logo {
+  height: 3em;
+}
+
+.header-link,
+.header-link:hover {
+  font-family: "Ramabhadra";
+  font-size: 0.7rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .header-link-text {
+    display: none;
+  }
+}
+
+.top-bar-contact {
+}
+
+.top-bar-contact .contact-icon {
+  height: 0.8rem;
+}
+
+.main-header {
+  margin-top: 2.5rem !important;
+  border-bottom-color: #000 !important;
+}
+
+div[role="main"] {
+  padding-top: 8rem !important;
+}
+
+.color-main {
+  color: #05386b;
+}
+
+.color-secondary {
+  color: #1b6f37;
+}
+
+.color-third {
+  color: #5cdb95;
+}
+
+.color-forth {
+  color: #8ee4af;
+}
+
+.color-fifth {
+  color: #edf5e1;
+}
+
+.main-section {
+  padding: 2rem;
+}
+
+.main-section-with-secondary {
+  margin: 2rem 0;
+  padding: 2rem 2rem 10rem 2rem !important;
+}
+
+.main-section-dark {
+  background-image: linear-gradient(to bottom right, #05386b, #1b6f37);
+  color: #edf5e1;
+  margin: 2rem 0;
+}
+
+.main-section h1 {
+  font-size: 2.5rem;
+}
+
+.main-section p {
+  font-size: 1rem;
+}
+
+.network-icon {
+  width: 100%;
+  max-height: 17rem;
+}
+
+@media (max-width: 767px) {
+  .network-icon {
+    max-height: 10rem;
+  }
+}
+
+.secondary-section {
+  margin-top: -10rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  color: #000;
+}
+
+.secondary-section-inner {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-image: linear-gradient(to bottom, #8ee4af, #1b6f37);
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.secondary-section-inner .rounded-button {
+  font-size: 1rem;
+  font-family: "Ramabhadra";
+}
+
+.rounded-button {
+  padding: 0.8rem;
+  border-radius: 2rem;
+}
+
+.rounded-button-light {
+  background-color: #edf5e1;
+  color: #05386b;
+}
+
+.rounded-button-icon {
+  height: 1rem;
+}
+
+.link-as-button,
+.link-as-button:hover {
+  text-decoration: none;
+  display: inline-block;
+  width: 12rem;
+  color: #000;
+  border-color: #1b6f37;
+}
+
+.rounded-button-text {
+}
+
+.secondary-section-inner-extra-padding {
+  padding: 1.2rem 1.8rem;
+}
+
+@media (max-width: 576px) {
+  .secondary-section {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+hr {
+  width: 1000vw;
+  margin-left: -1000px;
+  opacity: 1;
+  background-color: #000;
+  height: 3px;
+}
+
+.main-section-full-dark {
+  color: #05386b;
+  margin-top: 2rem;
+}
+
+.checked-box {
+  height: 1.2rem;
+  margin-top: -0.2rem;
+}
+
+.bg-accruvia-dark {
+  padding-top: 2rem;
+  margin-top: -2rem;
+  --bs-bg-opacity: 1;
+  background-color: #8ee4af;
+}
+
+.video-cell {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 767px) {
+  .video-cell {
+    margin-top: 1rem;
+  }
+}
