@@ -266,7 +266,9 @@ hr {
   height: 1.2rem;
 }
 
-.footer, .footer a, footer a:hover {
+.footer,
+.footer a,
+footer a:hover {
   background-color: #000;
   color: #fff;
   font-size: small;
@@ -274,3 +276,16 @@ hr {
   font-weight: bold;
 }
 
+.card-dark {
+  background-image: linear-gradient(to bottom, #8ee4af, #1b6f37);
+  color: #05386b;
+  font-size: 1.5rem;
+  height: 10rem;
+
+}
+
+.cards-table td {
+  background-image: linear-gradient(to bottom, #8ee4af, #1b6f37);
+  color: #05386b;
+  font-size: 1.5rem;
+}
