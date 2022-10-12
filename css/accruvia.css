@@ -279,13 +279,29 @@ footer a:hover {
 .card-dark {
   background-image: linear-gradient(to bottom, #8ee4af, #1b6f37);
   color: #05386b;
-  font-size: 1.5rem;
-  height: 10rem;
-
+  font-size: 1.1rem;
+  height: 8rem;
 }
 
-.cards-table td {
-  background-image: linear-gradient(to bottom, #8ee4af, #1b6f37);
-  color: #05386b;
-  font-size: 1.5rem;
+.card-dark-two-lines { 
+  padding-top: 2rem !important;
+}
+
+.card-dark-three-lines { 
+  padding-top: 1.2rem !important;
+}
+
+.card-dark-four-lines {
+  letter-spacing: -0.01rem;
+  padding-top: 0.5rem !important;
+}
+
+.plumber-image {
+  width: 100%;
+  max-width: 17rem;
+}
+
+.plumber-image-text {
+  color: #000;
+  font-size: large;
 }
