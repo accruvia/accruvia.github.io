@@ -48,7 +48,7 @@ body {
 .header-link:hover {
   font-family: "Ramabhadra";
   font-size: 0.7rem;
-  color: white;
+  color: #595959;
   text-decoration: none;
   font-weight: bold;
 }
@@ -57,13 +57,19 @@ body {
   height: 0.8rem;
 }
 
+.top-bar-contact {
+  background-color: #f6f7fb;
+  color: #595959;
+}
+
 .main-header {
   margin-top: 2.5rem !important;
   border-bottom-color: #000 !important;
+  background-color: #ffffff;
 }
 
 div[role="main"] {
-  padding-top: 8rem !important;
+  padding-top: 5.9rem !important;
 }
 
 .color-main {
@@ -95,10 +101,20 @@ div[role="main"] {
   padding: 2rem 2rem 10rem 2rem !important;
 }
 
-.main-section-dark {
-  background-image: linear-gradient(to bottom right, #05386b, #1b6f37);
-  color: #edf5e1;
+.container-main-section-dark {
+  background-color: #000;
+  background-image: url("../img/wave.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main-section-dark header {
+  color: #b7ca9a;
   margin: 2rem 0;
+}
+
+.main-section-dark p {
+  color: #ffffff;
 }
 
 .main-section h1 {
@@ -106,7 +122,7 @@ div[role="main"] {
 }
 
 .main-section p {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .network-icon {
@@ -122,17 +138,30 @@ div[role="main"] {
 
 .secondary-section {
   margin-top: -10rem;
-  margin-right: 5rem;
-  margin-left: 5rem;
   color: #000;
 }
 
 .secondary-section-inner {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  background-image: linear-gradient(to bottom, #8ee4af, #1b6f37);
-  padding: 1.2rem;
-  margin-bottom: 2rem;
+  /* card/one */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+
+  /* color-white */
+  background: #ffffff;
+
+  /* color-neutral-2 */
+  border: 1px solid #d9d9d9;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
 }
 
 .secondary-section-inner .rounded-button {
@@ -142,31 +171,25 @@ div[role="main"] {
 
 .rounded-button {
   padding: 0.8rem;
-  border-radius: 2rem;
+  border-radius: 0.375rem;
 }
 
 .rounded-button-light {
-  background-color: #edf5e1;
-  color: #05386b;
+  background-color: #436f3d;
+  color: #ffffff;
 }
 
 .rounded-button-icon {
-  height: 1rem;
+  height: 1.125rem;
 }
 
 .link-as-button,
 .link-as-button:hover {
   text-decoration: none;
   display: inline-block;
-  width: 12rem;
-  color: #000;
-  border-width: 3px;
-  border-color: black;
-  border-style: solid;
-}
-
-.secondary-section-inner-extra-padding {
-  padding: 1.2rem 1.8rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Ramabhadra";
 }
 
 @media (max-width: 576px) {
@@ -182,9 +205,13 @@ hr {
   opacity: 1;
 }
 
-.main-section-full-dark {
-  color: #05386b;
+.main-section-white {
+  color: #595959;
   margin-top: 2rem;
+  padding: 2rem;
+}
+.main-section-white .header {
+  color: #436f3d;
 }
 
 .checked-box {
@@ -192,16 +219,7 @@ hr {
   margin-top: -0.2rem;
 }
 
-.bg-accruvia-dark {
-  padding-top: 2rem;
-  margin-top: -2rem;
-  --bs-bg-opacity: 1;
-  background-color: #8ee4af;
-  margin-bottom: -1rem;
-}
-
 .video-cell {
-  margin-top: 6rem;
   margin-bottom: 3rem;
 }
 
@@ -216,32 +234,10 @@ hr {
   padding-left: 5rem;
 }
 
-.success-story-container-inner {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  background-image: linear-gradient(to bottom, #8ee4af, #1b6f37);
-  padding: 1.2rem;
-  margin-top: 2rem;
-}
-
-.testimonial-user {
-  width: 100%;
-  height: 100%;
-}
-
-.testimonial-user-background {
-  padding: 0;
-  border-radius: 2rem;
-  height: 3rem;
-  width: 3rem;
-  background-color: #8ee4af;
-  margin-top: -3rem;
-  margin-left: calc(50% - 1.5rem);
-  margin-bottom: 0.5rem;
-}
-
 .testimonial-name {
   font-style: italic;
+  color: #6d6d6d;
+  font-size: 1.125rem;
 }
 
 .bg-accruvia-darker {
@@ -283,11 +279,11 @@ footer a:hover {
   height: 8rem;
 }
 
-.card-dark-two-lines { 
+.card-dark-two-lines {
   padding-top: 2rem !important;
 }
 
-.card-dark-three-lines { 
+.card-dark-three-lines {
   padding-top: 1.2rem !important;
 }
 
@@ -304,4 +300,38 @@ footer a:hover {
 .plumber-image-text {
   color: #000;
   font-size: large;
+}
+
+.nav-item-right {
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+    width: 100%;
+  }
+}
+
+.nav-item .active {
+}
+
+.reverse-wave {
+  background-image: url("../img/wave-reverse.svg");
+}
+
+.profits-icon {
+  height: 2.8rem;
+}
+
+.testimonial-icon {
+  height: 2rem;
+}
+.testimonial-container {
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.testimonial-container p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
