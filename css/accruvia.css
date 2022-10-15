@@ -1,42 +1,3 @@
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Bold.ttf") format("truetype"),
-    url("../fonts/Inter-Bold.ttf") format("truetype"),
-    url("../fonts/Inter-ExtraBold.ttf") format("truetype"),
-    url("../fonts/Inter-ExtraLight.ttf") format("truetype"),
-    url("../fonts/Inter-Light.ttf") format("truetype"),
-    url("../fonts/Inter-Medium.ttf") format("truetype"),
-    url("../fonts/Inter-Regular.ttf") format("truetype"),
-    url("../fonts/Inter-SemiBold.ttf") format("truetype"),
-    url("../fonts/Inter-Thin.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Nabla";
-  src: url("../fonts/Nabla-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Ramabhadra";
-  src: url("../fonts/Ramabhadra-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Glory";
-  src: url("../fonts/Glory-Bold.ttf") format("truetype"),
-    url("../fonts/Glory-BoldItalic.ttf") format("truetype"),
-    url("../fonts/Glory-ExtraBold.ttf") format("truetype"),
-    url("../fonts/Glory-ExtraBoldItalic.ttf") format("truetype"),
-    url("../fonts/Glory-ExtraLight.ttf") format("truetype"),
-    url("../fonts/Glory-ExtraLightItalic.ttf") format("truetype"),
-    url("../fonts/Glory-Italic.ttf") format("truetype"),
-    url("../fonts/Glory-Light.ttf") format("truetype"),
-    url("../fonts/Glory-LightItalic.ttf") format("truetype"),
-    url("../fonts/Glory-Medium.ttf") format("truetype"),
-    url("../fonts/Glory-MediumItalic.ttf") format("truetype"),
-    url("../fonts/Glory-Regular.ttf") format("truetype");
-}
-
 body {
   min-width: 20rem;
 }
@@ -46,7 +7,6 @@ body {
 
 .header-link,
 .header-link:hover {
-  font-family: "Ramabhadra";
   font-size: 0.7rem;
   color: #595959;
   text-decoration: none;
@@ -166,7 +126,6 @@ div[role="main"] {
 
 .secondary-section-inner .rounded-button {
   font-size: 1rem;
-  font-family: "Ramabhadra";
 }
 
 .rounded-button {
@@ -189,7 +148,6 @@ div[role="main"] {
   display: inline-block;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "Ramabhadra";
 }
 
 @media (max-width: 576px) {
@@ -532,6 +490,8 @@ footer a:hover {
   background-position: center;
   margin-top: 2rem;
   background-color: #f6f7fb;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .quickbooks-icon {
@@ -544,7 +504,7 @@ footer a:hover {
 
 .odoo-icon {
   background-image: url("../img/odoo.svg");
-  background-color: #714B67;
+  background-color: #714b67;
 }
 
 .creative-info-icon {
@@ -581,5 +541,4 @@ footer a:hover {
 .nmi-icon {
   background-image: url("../img/nmi.webp");
   background-size: 8rem;
-
 }
